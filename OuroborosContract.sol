@@ -19,8 +19,7 @@
 //                                                                   
 //                                                                   
 //                                              
-                                            
-
+                                        
 // File: @openzeppelin/contracts/utils/introspection/IERC165.sol
 pragma solidity ^0.8.0;
 /**
@@ -1238,25 +1237,22 @@ abstract contract Ownable is Context {
     }
 }
 
-// File: contracts/NerdyCoderClones.sol
 
-
-
-// Created by HashLips
-// 
+// Created by HashLips, forked by Collie Pixels. Much gratitude to HashLips!
+// The OuroborosFoundary
 
 pragma solidity ^0.8.0;
 
 
 
-contract OuroborosContract is ERC721Enumerable, Ownable {
+contract OuroborosFoundry is ERC721Enumerable, Ownable {
   using Strings for uint256;
 
   string public baseURI;
   string public baseExtension = ".json";
   uint256 public cost = 0 ether;
-  uint256 public maxSupply = 1111;
-  uint256 public maxMintAmount = 7;
+  uint256 public maxSupply = 1000;
+  uint256 public maxMintAmount = 20;
   bool public paused = false;
   mapping(address => bool) public whitelisted;
 
