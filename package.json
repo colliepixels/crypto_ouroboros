@@ -23,6 +23,8 @@
   "dependencies": {
     "all": "^0.0.0",
     "canvas": "^2.8.0",
+    "ethereumjs-abi": "^0.6.8",
+    "ethereumjs-util": "^7.1.0",
     "sha1": "^1.1.1"
   }
 }
